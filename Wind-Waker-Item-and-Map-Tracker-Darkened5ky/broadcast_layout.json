@@ -1,0 +1,30 @@
+﻿{
+  "type": "array",
+    "margin": "0",
+    "width": 520,
+    "height": 800,
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "h_alignment": "center",
+        "content": [
+          {
+            "type": "layout",
+            "key": "shared_item_grid"
+          },
+          {
+            "type": "container",
+            "width": 420,
+            "height": 800,
+            "content": {
+              "type": "map",
+              "maps": [
+                "map"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+}

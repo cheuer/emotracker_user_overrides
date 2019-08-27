@@ -1,0 +1,55 @@
+﻿{
+  "type": "array",
+		// "background": "#8d5e8d",
+		"margin": "0",
+		"width": 480,
+		"height": 800,
+		"dropshadow": false,
+		"content": [
+			{
+				"type": "array",
+				"orientation": "horizontal",
+				"content": [
+					{
+						"type": "array",
+						"orientation": "vertical",
+						"height": 800,
+						"h_alignment": "right",
+						"content": [
+							{
+								"type": "layout",
+								"key": "shared_item_grid",
+								"dropshadow": false
+							},
+              {
+                "type": "container",
+                "width": 240,
+                "height": 450,
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "child", "adult"
+                  ]
+                }
+              }
+						]
+					},
+          {
+            "type": "container",
+            "width": 210,
+            "height": 800,
+            "h_alignment": "left",
+            "content": {
+              "type": "recentpins",
+              "style": "wrap",
+              "h_alignment": "stretch",
+              "v_alignment": "stretch",
+              "orientation": "vertical",
+              "compact": true,
+              "num_items": 5
+            }
+          }
+				]
+			}
+		]
+}
