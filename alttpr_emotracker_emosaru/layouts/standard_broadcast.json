@@ -18,7 +18,8 @@
 					  "content": [
 						{
 						  "type": "layout",
-						  "key": "shared_item_grid"
+						  "key": "shared_item_grid",
+						  "height": 310
 						},
 						{
 							"type": "container",

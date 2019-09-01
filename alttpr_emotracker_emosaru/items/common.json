@@ -429,8 +429,15 @@
       "name": "Aganhim",
       "capturable": false,
       "type": "toggle",
-      "img": "images/0055.png",
+      "img": "images/aga1.png",
       "codes": "aga1,aga,aganhim"
+    },
+    {
+      "name": "Agahnim 2",
+      "capturable": false,
+      "type": "toggle",
+      "img": "images/aga2.png",
+      "codes": "aga2,gt"
     },
   
     // Progressive Gloves
