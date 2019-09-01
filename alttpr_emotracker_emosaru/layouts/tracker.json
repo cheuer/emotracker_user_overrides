@@ -8,42 +8,52 @@
 		  "orientation": "vertical",
 		  "content": [
 			{
-			  "type": "itemgrid",
-			  "h_alignment": "center",
-			  "item_margin": "0,0,2,10",
-			  "item_size": 40,
-			  "rows": [
-				[ "bowandarrows", "boomerangs", "hookshot", "bombs", "mushroompowder", "owsword" ],
-				[ "firerod", "icerod", "bombos", "ether", "quake", "shield" ],
-				[ "lamp", "hammer", "fluteshovel", "net", "book", "armor" ],
-				[ "bottle", "somaria", "byrna", "cape", "mirror", "gomode" ],
-				[ "boots", "lift1", "flippers", "pearl", "halfmagic" ]
-			  ]
-			},
-			{
 			  "type": "array",
-			  "orientation": "vertical",
+			  "orientation": "horizontal",
 			  "content": [
+				{
+					"type": "itemgrid",
+					"h_alignment": "center",
+					"item_margin": "0,0,2,10",
+					"item_size": 40,
+					"rows": [
+					  [ "bowandarrows", "boomerangs", "hookshot", "bombs", "mushroompowder", "owsword" ],
+					  [ "firerod", "icerod", "bombos", "ether", "quake", "shield" ],
+					  [ "lamp", "hammer", "fluteshovel", "net", "book", "armor" ],
+					  [ "bottle", "somaria", "byrna", "cape", "mirror", "gomode" ],
+					  [ "boots", "lift1", "flippers", "pearl", "halfmagic" ]
+					]
+				},
 				{
 				  "type": "itemgrid",
 				  "h_alignment": "center",
 				  "item_margin": "0,2",
-				  "item_size": 36,
-				  "item_width": 36,
+				  "item_size": 30,
+				  "item_width": 30,
 				  "badge_font_size": 16,
 				  "rows": [
-					[ "aga", "", "easternpalace", "desertpalace", "towerofhera" ]
+					[ "easternpalace" ],
+					[ "desertpalace" ],
+					[ "towerofhera" ],
+					[ "" ],
+					[ "aga" ]
 				  ]
 				},
 				{
 				  "type": "itemgrid",
 				  "h_alignment": "center",
 				  "item_margin": "0,2",
-				  "item_size": 36,
-				  "item_width": 36,
+				  "item_size": 30,
+				  "item_width": 30,
 				  "badge_font_size": 16,
 				  "rows": [
-					[ "palaceofdarkness", "swamppalace", "skullwoods", "thievestown", "icepalace", "miserymire", "turtlerock" ]
+					[ "palaceofdarkness" ],
+					[ "swamppalace" ],
+					[ "skullwoods" ],
+					[ "thievestown" ],
+					[ "icepalace" ],
+					[ "miserymire" ],
+					[ "turtlerock" ]
 				  ]
 				}
 			  ]
@@ -58,35 +68,35 @@
 						"item": "mode_goal",
 						"width": 48,
 						"height": 32,
-						"margin": "5,10"
+						"margin": "5,0"
 					},
 					{
 						"type": "item",
 						"item": "mode_state",
 						"width": 32,
 						"height": 32,
-						"margin": "2,10"
+						"margin": "2,0"
 					},
 					{
 						"type": "item",
 						"item": "mode_swords",
 						"width": 32,
 						"height": 32,
-						"margin": "2,10"
+						"margin": "2,0"
 					},
 					{
 						"type": "item",
 						"item": "mode_difficulty",
 						"width": 32,
 						"height": 32,
-						"margin": "2,10"
+						"margin": "2,0"
 					},
 					{
 						"type": "item",
 						"item": "mode_variation",
 						"width": 32,
 						"height": 32,
-						"margin": "2,10"
+						"margin": "2,0"
 					}
 				]
 			}
@@ -123,6 +133,19 @@
 			"type": "dock",
 			"dock": "bottom",
 			"content": [
+				{
+					"type": "group",
+					"header": "Items",
+					"dock": "left",
+					"background": "#000000",
+					"width": 350,
+					// "height": 300,
+					"content": {
+						"type": "layout",
+						"key": "shared_item_grid",
+						"height": 300
+					}
+				},
 			  {
 				"type": "group",
 				"header": "Pinned Locations",
@@ -135,30 +158,30 @@
 				  "orientation": "vertical",
 				  "compact": true,
 				  // "width": "370",
-				  "height": "300"
+				  "height": 300
 				}
 			  }
 			]
 		  },
-		  {
-			"type": "dock",
-			"dock": "left",
-			"v_alignment": "stretch",
-			"content": [
-			  {
-				"type": "group",
-				"header": "Items",
-				"dock": "left",
-				"background": "#000000",
-				"width": 280,
-				"height": 700,
-				"content": {
-				  "type": "layout",
-				  "key": "shared_item_grid"
-				}
-			  }
-			]
-		  },
+		//   {
+		// 	"type": "dock",
+		// 	"dock": "left",
+		// 	"v_alignment": "stretch",
+		// 	"content": [
+		// 	  {
+		// 		"type": "group",
+		// 		// "header": "Items",
+		// 		"dock": "left",
+		// 		"background": "#000000",
+		// 		"width": 350,
+		// 		"height": 700,
+		// 		"content": {
+		// 		  "type": "layout",
+		// 		  "key": "shared_item_grid"
+		// 		}
+		// 	  }
+		// 	]
+		//   },
 		  {
 			"type": "map"
 		  }
