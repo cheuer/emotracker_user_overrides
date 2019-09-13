@@ -63,6 +63,13 @@
 				  "orientation": "horizontal",
 				  "h_alignment": "center",
 				  "content": [
+					{
+						"type": "item",
+						"item": "mode_logic",
+						"width": 32,
+						"height": 32,
+						"margin": "2,0"
+					},
 					  {
 						  "type": "item",
 						  "item": "mode_goal",
@@ -87,6 +94,13 @@
 					  {
 						  "type": "item",
 						  "item": "mode_difficulty",
+						  "width": 32,
+						  "height": 32,
+						  "margin": "2,0"
+					  },
+					  {
+						  "type": "item",
+						  "item": "mode_keys",
 						  "width": 32,
 						  "height": 32,
 						  "margin": "2,0"
@@ -138,7 +152,7 @@
 					  "header": "Items",
 					  "dock": "left",
 					  "background": "#000000",
-					  "width": 350,
+					  "width": 370,
 					  // "height": 300,
 					  "content": {
 						  "type": "layout",

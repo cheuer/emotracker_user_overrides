@@ -65,6 +65,13 @@
 				"content": [
 					{
 						"type": "item",
+						"item": "mode_logic",
+						"width": 32,
+						"height": 32,
+						"margin": "2,0"
+					},
+					{
+						"type": "item",
 						"item": "mode_goal",
 						"width": 48,
 						"height": 32,
@@ -87,6 +94,13 @@
 					{
 						"type": "item",
 						"item": "mode_difficulty",
+						"width": 32,
+						"height": 32,
+						"margin": "2,0"
+					},
+					{
+						"type": "item",
+						"item": "mode_keys",
 						"width": 32,
 						"height": 32,
 						"margin": "2,0"
@@ -123,11 +137,8 @@
 	"tracker_default": {
 	  "type": "container",
 	  "background": "#000000",
-	  // "width": 600,
-	  // "height": 1000,
 	  "content": {
 		"type": "dock",
-		// "dropshadow": true,
 		"content": [
 		  {
 			"type": "dock",
@@ -138,12 +149,12 @@
 					"header": "Items",
 					"dock": "left",
 					"background": "#000000",
-					"width": 350,
+					"width": 370,
 					// "height": 300,
 					"content": {
 						"type": "layout",
 						"key": "shared_item_grid",
-						"height": 300
+						// "height": 300
 					}
 				},
 			  {
@@ -163,25 +174,6 @@
 			  }
 			]
 		  },
-		//   {
-		// 	"type": "dock",
-		// 	"dock": "left",
-		// 	"v_alignment": "stretch",
-		// 	"content": [
-		// 	  {
-		// 		"type": "group",
-		// 		// "header": "Items",
-		// 		"dock": "left",
-		// 		"background": "#000000",
-		// 		"width": 350,
-		// 		"height": 700,
-		// 		"content": {
-		// 		  "type": "layout",
-		// 		  "key": "shared_item_grid"
-		// 		}
-		// 	  }
-		// 	]
-		//   },
 		  {
 			"type": "map"
 		  }

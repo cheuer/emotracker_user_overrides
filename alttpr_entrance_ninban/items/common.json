@@ -547,7 +547,27 @@
         }
       ]
     },
-	// Mode Icons
+  // Mode Icons
+	{
+		"name": "Logic",
+		"type": "progressive",
+		"allow_disabled": false,
+		"stages": [
+			{
+				"img": "images/mode_nmg.png",
+				"codes": "mode_logic"
+			},
+			{
+				"img": "images/mode_owg.png"
+			},
+			{
+				"img": "images/mode_mg.png"
+			},
+			{
+				"img": "images/mode_nl.png"
+			}
+		]
+	},
 	{
 		"name": "Goal",
 		"type": "progressive",
@@ -628,6 +648,26 @@
 			}
 		]
 	},
+  {
+    "name": "Dungeon Items",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mode_keys_standard.png",
+        "codes": "mode_keys"
+      },
+      {
+        "img": "images/mode_keys_mc.png"
+      },
+      {
+        "img": "images/mode_keys_mcs.png"
+      },
+      {
+        "img": "images/mode_keys_full.png"
+      }
+    ]
+  },
 	{
 		"name": "Variation",
 		"type": "progressive",
@@ -638,9 +678,6 @@
 			},
 			{
 				"img": "images/door_closed.png"
-			},
-			{
-				"img": "images/mode_owg.png"
 			}
 		]
 	},
