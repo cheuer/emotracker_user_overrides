@@ -13,13 +13,12 @@
 					{
 					  "type": "array",
 					  "orientation": "vertical",
-					  "width": 350,
+					  "width": 370,
 					  "margin": "0,0,0,0",
 					  "content": [
 						{
 						  "type": "layout",
-						  "key": "shared_item_grid",
-						  "height": 310
+						  "key": "shared_item_grid"
 						},
 						{
 							"type": "container",
@@ -35,11 +34,10 @@
 					{
 						"type": "container",
 						"margin": "0,0,0,0",
-						"width": 200,
+						"width": 144,
 						"height": 1080,
 						"content": {
 							"type": "recentpins",
-							// "style": "wrap",
 							"h_alignment": "stretch",
 							"v_alignment": "stretch",
 							"orientation": "vertical",

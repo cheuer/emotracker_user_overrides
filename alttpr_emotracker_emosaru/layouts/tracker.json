@@ -153,7 +153,7 @@
 					// "height": 300,
 					"content": {
 						"type": "layout",
-						"key": "shared_item_grid",
+						"key": "shared_item_grid"
 						// "height": 300
 					}
 				},
