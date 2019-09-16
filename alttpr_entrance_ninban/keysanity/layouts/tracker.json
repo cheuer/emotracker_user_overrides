@@ -52,13 +52,6 @@
 							  },
 							  {
 								  "type": "item",
-								  "item": "mode_swords",
-								  "width": 32,
-								  "height": 32,
-								  "margin": "2,10"
-							  },
-							  {
-								  "type": "item",
 								  "item": "mode_difficulty",
 								  "width": 32,
 								  "height": 32,
