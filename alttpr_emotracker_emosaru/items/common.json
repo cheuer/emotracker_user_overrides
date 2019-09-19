@@ -591,16 +591,31 @@
 				"img": "images/mode_all_dungeons.png"
 			},
 			{
-				"img": "images/mode_crystals.png"
-			},
-			{
 				"img": "images/mode_triforce.png"
 			},
 			{
 				"img": "images/mode_pedestal.png"
 			}
 		]
-	},
+  },
+  {
+    "name": "GT Required Crystals",
+    "type": "consumable",
+    "img": "images/mode_crystals_gt.png",
+    "codes": "gt_crystals",
+    "swap_actions" :true,
+    "max_quantity": 7,
+    "initial_quantity": 7
+  },
+  {
+    "name": "Ganon Required Crystals",
+    "type": "consumable",
+    "img": "images/mode_crystals_gn.png",
+    "codes": "ganon_crystals",
+    "swap_actions" :true,
+    "max_quantity": 7,
+    "initial_quantity": 7
+  },
 	{
 		"name": "State",
 		"type": "progressive",

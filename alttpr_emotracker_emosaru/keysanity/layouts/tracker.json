@@ -41,21 +41,40 @@
 							"item": "mode_goal",
 							"width": 48,
 							"height": 32,
-							"margin": "5,10"
+							"margin": "5,0"
+						},
+						{
+							"type": "array",
+							"orientation": "vertical",
+							"margin": "2,0",
+							"content": [
+								{
+									"type": "item",
+									"item": "gt_crystals",
+									"width": 32,
+									"height": 16
+								},
+								{
+									"type": "item",
+									"item": "ganon_crystals",
+									"width": 32,
+									"height": 16
+								}
+							]
 						},
 						{
 							"type": "item",
 							"item": "mode_state",
 							"width": 32,
 							"height": 32,
-							"margin": "2,10"
+							"margin": "2,0"
 						},
 						{
 							"type": "item",
 							"item": "mode_difficulty",
 							"width": 32,
 							"height": 32,
-							"margin": "2,10"
+							"margin": "2,0"
 						},
 						{
 							"type": "item",
@@ -69,7 +88,7 @@
 							"item": "mode_variation",
 							"width": 32,
 							"height": 32,
-							"margin": "2,10"
+							"margin": "2,0"
 						}
 					]
 				  }
