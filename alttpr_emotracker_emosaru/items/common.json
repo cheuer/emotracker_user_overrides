@@ -106,14 +106,14 @@
     "name": "Blue Boomerang",
     "type": "toggle",
     "img": "images/boomerang_blue.png",
-    "codes": "blue_boomerang,bluemarang"
+    "codes": "blue_boomerang,bluemarang,best_boomerang"
   },
   // Red Boomerang
   {
     "name": "Red Boomerang",
     "type": "toggle",
     "img": "images/boomerang_red.png",
-    "codes": "red_boomerang,redmarang"
+    "codes": "red_boomerang,redmarang,worst_boomerang"
   },
   // Boomerang Combo
   {
