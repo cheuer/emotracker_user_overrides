@@ -1,0 +1,140 @@
+{
+  "shared_item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "content": [
+        {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "itemgrid",
+              "h_alignment": "center",
+              "item_margin": "0,0,2,10",
+              "item_size": 40,
+              "rows": [
+              [ "bowandarrows", "boomerangs", "hookshot", "bombs", "mushroompowder", "owsword" ],
+              [ "firerod", "icerod", "bombos", "ether", "quake", "shield" ],
+              [ "lamp", "hammer", "fluteshovel", "net", "book", "armor" ],
+              [ "bottle", "somaria", "byrna", "cape", "mirror", "gomode" ],
+              [ "boots", "lift1", "flippers", "pearl", "halfmagic" ]
+              ]
+            },
+            {
+            "type": "array",
+            "orientation": "horizontal",
+            "h_alignment": "center",
+            "content": [
+              {
+                "type": "item",
+                "item": "mode_logic",
+                "width": 32,
+                "height": 32,
+                "margin": "2,0"
+              },
+              {
+                "type": "item",
+                "item": "mode_goal",
+                "width": 48,
+                "height": 32,
+                "margin": "5,0"
+              },
+              {
+                "type": "array",
+                "orientation": "vertical",
+                "margin": "2,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "gt_crystals",
+                    "width": 32,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "ganon_crystals",
+                    "width": 32,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "item",
+                "item": "mode_state",
+                "width": 32,
+                "height": 32,
+                "margin": "2,0"
+              },
+              {
+                "type": "item",
+                "item": "mode_difficulty",
+                "width": 32,
+                "height": 32,
+                "margin": "2,0"
+              },
+              {
+                "type": "item",
+                "item": "mode_keys",
+                "width": 32,
+                "height": 32,
+                "margin": "2,0"
+              },
+              {
+                "type": "item",
+                "item": "mode_variation",
+                "width": 32,
+                "height": 32,
+                "margin": "2,0"
+              }
+            ]
+            }
+          ]
+        },
+        {
+          "type": "itemgrid",
+          "h_alignment": "center",
+          "item_margin": "0,3",
+          "item_size": 16,
+          "item_width": 20,
+          "badge_font_size": 9,
+          "rows": [
+            [ "ep_label", "easternpalace", "ep_smallkey", "ep_bigkey" ],
+            [ "dp_label", "desertpalace", "dp_smallkey", "dp_bigkey" ],
+            [ "toh_label", "towerofhera", "toh_smallkey", "toh_bigkey" ],
+            [ "hc_label", "", "hc_smallkey", "" ],
+            [ "at_label", "aga", "at_smallkey", "" ],
+            [ "pod_label", "palaceofdarkness", "pod_smallkey", "pod_bigkey" ],
+            [ "sp_label", "swamppalace", "sp_smallkey", "sp_bigkey" ],
+            [ "sw_label", "skullwoods", "sw_smallkey", "sw_bigkey" ],
+            [ "tt_label", "thievestown", "tt_smallkey", "tt_bigkey" ],
+            [ "ip_label", "icepalace", "ip_smallkey", "ip_bigkey" ],
+            [ "mm_label", "miserymire", "mm_smallkey", "mm_bigkey" ],
+            [ "tr_label", "turtlerock", "tr_smallkey", "tr_bigkey" ],
+            [ "gt_label", "aga2", "gt_smallkey", "gt_bigkey" ]
+          ]
+        }
+        ]
+      }
+      ]
+    },
+    "tracker_capture_item": {
+      "type": "container",
+      "content": {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "item_margin": "0,0,2,10",
+        "rows": [
+          [ "bowandarrows", "", "", "hookshot", "powder", "mushroom", "blue_boomerang" ],
+          [ "firerod", "icerod", "bombos", "ether", "quake", "shovel", "red_boomerang" ],
+          [ "lamp", "hammer", "ocarina", "net", "book", "pearl", "generic_smallkey" ],
+          [ "bottle", "somaria", "byrna", "cape", "mirror", "", "generic_bigkey" ],
+          [ "lift1", "boots", "flippers", "halfmagic", "owsword", "shield", "armor" ]
+        ]
+      }
+    }
+  }
+  

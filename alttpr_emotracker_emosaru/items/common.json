@@ -625,6 +625,24 @@
     "max_quantity": 7,
     "initial_quantity": 7
   },
+  // Placement Modes
+  {
+    "name": "Item Placement Mode",
+    "type": "progressive",
+    "allow_disabled": false,
+    "initial_stage_idx": 1,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/item_placement_basic.png",
+        "codes": "item_placement_mode,item_placement_basic"
+      },
+      {
+        "img": "images/item_placement_advanced.png",
+        "codes": "item_placement_mode,item_placement_advanced"
+      }
+    ]
+  },
   {
     "name": "State",
     "type": "progressive",
