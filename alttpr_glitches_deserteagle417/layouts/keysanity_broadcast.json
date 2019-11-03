@@ -1,0 +1,52 @@
+{
+    "tracker_broadcast": {
+		"type": "array",
+		"background": "#000",
+		"margin": "0",
+		"width": 504,
+		"height": 1000,
+		"content": [
+			{
+				"type": "array",
+				"orientation": "horizontal",
+				"content": [
+					{
+					  "type": "array",
+					  "orientation": "vertical",
+					  "width": 370,
+					  "margin": "0,0,0,0",
+					  "content": [
+						{
+						  "type": "layout",
+						  "key": "shared_item_grid"
+						},
+						{
+							"type": "container",
+							"margin": "0,10,0,0",
+							"width": 300,
+							"height": 560,
+							"content": {
+								"type": "map"
+							}
+						}
+					  ]
+					},
+					{
+						"type": "container",
+						"margin": "0,0,0,0",
+						"width": 144,
+						"height": 1080,
+						"content": {
+							"type": "recentpins",
+							"h_alignment": "stretch",
+							"v_alignment": "stretch",
+							"orientation": "vertical",
+							"compact": true,
+							"num_items": 10
+						}
+					}
+				]
+			}
+		]
+	}
+}
