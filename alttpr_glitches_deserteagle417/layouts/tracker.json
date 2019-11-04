@@ -35,8 +35,10 @@
 					  [ "easternpalace" ],
 					  [ "desertpalace" ],
 					  [ "towerofhera" ],
-					  [ "" ],
-					  [ "aga" ]
+					  [ "aga" ],
+					  [ "aga2" ],
+					  [ "tr_bigkey" ],
+					  [ "gt_bigkey" ]
 					]
 				  },
 				  {
@@ -63,13 +65,13 @@
 				  "orientation": "horizontal",
 				  "h_alignment": "center",
 				  "content": [
-					{
-						"type": "item",
-						"item": "mode_logic",
-						"width": 32,
-						"height": 32,
-						"margin": "2,0"
-					},
+						{
+							"type": "item",
+							"item": "mode_logic",
+							"width": 32,
+							"height": 32,
+							"margin": "2,0"
+						},
 					  {
 						  "type": "item",
 						  "item": "mode_goal",
