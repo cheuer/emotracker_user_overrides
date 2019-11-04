@@ -634,6 +634,7 @@
     "name": "Logic",
     "type": "progressive",
     "allow_disabled": false,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/mode_nmg.png",
