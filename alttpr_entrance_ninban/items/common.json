@@ -556,6 +556,100 @@
       }
     ]
   },
+  {
+    "name": "GT Required Crystals",
+    "capturable": false,
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 7,
+    "stages": [
+      {
+        "img": "images/mode_crystals_gt.png",
+        "codes": "gt_crystals",
+        "img_mods": "overlay|images/mode_crystals_overlay0.png"
+      },
+      {
+        "img": "images/mode_crystals_gt.png",
+        "img_mods": "overlay|images/mode_crystals_overlay1.png"
+      },
+      {
+        "img": "images/mode_crystals_gt.png",
+        "img_mods": "overlay|images/mode_crystals_overlay2.png"
+      },
+      {
+        "img": "images/mode_crystals_gt.png",
+        "img_mods": "overlay|images/mode_crystals_overlay3.png"
+      },
+      {
+        "img": "images/mode_crystals_gt.png",
+        "img_mods": "overlay|images/mode_crystals_overlay4.png"
+      },
+      {
+        "img": "images/mode_crystals_gt.png",
+        "img_mods": "overlay|images/mode_crystals_overlay5.png"
+      },
+      {
+        "img": "images/mode_crystals_gt.png",
+        "img_mods": "overlay|images/mode_crystals_overlay6.png"
+      },
+      {
+        "img": "images/mode_crystals_gt.png",
+        "img_mods": "overlay|images/mode_crystals_overlay7.png"
+      },
+      {
+        "img": "images/mode_crystals_gt.png",
+        "img_mods": "overlay|images/mode_crystals_overlayunknown.png"
+      }
+    ]
+  },
+  {
+    "name": "Ganon Required Crystals",
+    "capturable": false,
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 7,
+    "stages": [
+      {
+        "img": "images/mode_crystals_gn.png",
+        "codes": "ganon_crystals",
+        "img_mods": "overlay|images/mode_crystals_overlay0.png"
+      },
+      {
+        "img": "images/mode_crystals_gn.png",
+        "img_mods": "overlay|images/mode_crystals_overlay1.png"
+      },
+      {
+        "img": "images/mode_crystals_gn.png",
+        "img_mods": "overlay|images/mode_crystals_overlay2.png"
+      },
+      {
+        "img": "images/mode_crystals_gn.png",
+        "img_mods": "overlay|images/mode_crystals_overlay3.png"
+      },
+      {
+        "img": "images/mode_crystals_gn.png",
+        "img_mods": "overlay|images/mode_crystals_overlay4.png"
+      },
+      {
+        "img": "images/mode_crystals_gn.png",
+        "img_mods": "overlay|images/mode_crystals_overlay5.png"
+      },
+      {
+        "img": "images/mode_crystals_gn.png",
+        "img_mods": "overlay|images/mode_crystals_overlay6.png"
+      },
+      {
+        "img": "images/mode_crystals_gn.png",
+        "img_mods": "overlay|images/mode_crystals_overlay7.png"
+      },
+      {
+        "img": "images/mode_crystals_gn.png",
+        "img_mods": "overlay|images/mode_crystals_overlayunknown.png",
+      }
+    ]
+  },
   // Mode Icons
   {
     "name": "Logic",
@@ -599,24 +693,6 @@
         "img": "images/mode_pedestal.png"
       }
     ]
-  },
-  {
-    "name": "GT Required Crystals",
-    "type": "consumable",
-    "img": "images/mode_crystals_gt.png",
-    "codes": "gt_crystals",
-    "swap_actions": true,
-    "max_quantity": 7,
-    "initial_quantity": 7
-  },
-  {
-    "name": "Ganon Required Crystals",
-    "type": "consumable",
-    "img": "images/mode_crystals_gn.png",
-    "codes": "ganon_crystals",
-    "swap_actions": true,
-    "max_quantity": 7,
-    "initial_quantity": 7
   },
   {
     "name": "State",
