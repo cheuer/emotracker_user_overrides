@@ -61,7 +61,7 @@
 }, {
   "name": "Agahnim's Tower",
   "color": "#701d43",
-  "access_rules": [ "mst", "cape" ],
+  "access_rules": [ "$canClearAgaTowerBarrier" ],
   "map_locations": [
     {
       "map": "lightworld",
@@ -72,7 +72,6 @@
   "sections": [
     {
       "name": "Room 03",
-      "access_rules": [ "mst", "cape" ],
       "item_count": 1
     },
     {
@@ -82,7 +81,11 @@
     },
     {
       "name": "Agahnim",
-      "access_rules": [ "sword,at_smallkey:2,[lamp]" ],
+      "access_rules": [
+        "$canRemoveCurtains,at_smallkey:2,[lamp],sword",
+        "$canRemoveCurtains,at_smallkey:2,[lamp],hammer",
+        "$canRemoveCurtains,at_smallkey:2,[lamp],net"
+      ],
       "hosted_item": "aga1"
     }
   ]
@@ -157,7 +160,15 @@
     {
       "name": "Lanmolas",
       "short_name": "Lanmo",
-      "access_rules": [ "lift1,firesource,dp_bigkey,sword", "lift1,firesource,dp_bigkey,hammer", "lift1,firesource,dp_bigkey,firerod", "lift1,firesource,dp_bigkey,icerod", "lift1,firesource,dp_bigkey,bow", "lift1,firesource,dp_bigkey,somaria", "lift1,firesource,dp_bigkey,[sword]" ],
+      "access_rules": [ 
+        "lift1,firesource,dp_bigkey,sword", 
+        "lift1,firesource,dp_bigkey,hammer", 
+        "lift1,firesource,dp_bigkey,firerod", 
+        "lift1,firesource,dp_bigkey,icerod", 
+        "lift1,firesource,dp_bigkey,bow", 
+        "lift1,firesource,dp_bigkey,somaria", 
+        "lift1,firesource,dp_bigkey,[sword]" 
+      ],
       "hosted_item": "desertpalace",
       "item_count": 1
     }
@@ -175,7 +186,7 @@
 {
   "name": "Palace of Darkness",
   "color": "#af0000",
-  "access_rules": [ "aga1,moonpearl", "hammer,lift1,moonpearl", "lift2,flippers,moonpearl", "lift2,boots,pearl,[hammer]" ],
+  "access_rules": [ "aga1,moonpearl", "hammer,lift1,moonpearl", "lift2,[flippers],moonpearl", "lift2,boots,pearl,[hammer]" ],
   "sections": [
 	{
 		"name": "Left Side",
@@ -351,7 +362,7 @@
         //  Back
         {
           "name": "Mothula",
-          "access_rules": [ "@Skull Woods/Back,sword" ],
+          "access_rules": [ "@Skull Woods/Back,$canRemoveCurtains" ],
           "hosted_item": "skullwoods",
           "item_count": 1
         }
@@ -411,7 +422,7 @@
 {
   "name": "Ice Palace",
   "color": "#af0000",
-  "access_rules": [ "moonpearl,lift2,firerod,[flippers]", "moonpearl,lift2,bombos,sword,[flippers]" ],
+  "access_rules": [ "moonpearl,lift2,firerod,[flippers]", "moonpearl,lift2,bombos,$canUseMedallions,[flippers]" ],
   "sections": [
     {
       "name": "Dungeon",
@@ -439,7 +450,12 @@
 	//  Back
     {
       "name": "Khold",
-      "access_rules": [ "hammer,bombos,[somaria]", "hammer,firerod,[somaria]", "hammer,bombos,[ip_smallkey:1],[ip_bigkey]", "hammer,firerod,[ip_smallkey:1],[ip_bigkey]" ],
+      "access_rules": [
+        "hammer,bombos,$canUseMedallions,[somaria],item_placement_advanced",
+        "hammer,firerod,[somaria],item_placement_advanced",
+        "hammer,bombos,$canUseMedallions,[ip_smallkey:1]",
+        "hammer,firerod,[ip_smallkey:1]"
+      ],
       "hosted_item": "icepalace",
       "item_count": 1
     }
@@ -464,7 +480,14 @@
     {
       "name": "Misery Mire",
       "color": "#af0000",
-      "access_rules": [ "moonpearl,mm_medallion,hookshot,sword", "moonpearl,mm_medallion,boots,sword", "moonpearl,bombos,ether,quake,hookshot,sword", "moonpearl,bombos,ether,quake,boots,sword" ],
+      "access_rules": [
+        "moonpearl,mm_medallion,hookshot,$canUseMedallions",
+        "moonpearl,bombos,ether,quake,hookshot,$canUseMedallions",
+        "moonpearl,mm_medallion,boots,[hookshot],$canUseMedallions",
+        "moonpearl,bombos,ether,quake,boots,[hookshot],$canUseMedallions",
+        "moonpearl,mm_medallion,boots,$canUseMedallions,item_placement_advanced",
+        "moonpearl,bombos,ether,quake,boots,$canUseMedallions,item_placement_advanced"
+      ],
       "sections": [
         //  Front
         {
@@ -521,22 +544,22 @@
           "clear_as_group": false,
           "item_count": 2
         },
-		{
-		  "name": "Basement",
-		  "access_rules": [ "firesource,toh_smallkey" ],
-		  "item_count": 1
-		},
+        {
+          "name": "Basement",
+          "access_rules": [ "firesource,toh_smallkey" ],
+          "item_count": 1
+        },
         {
           "name": "Upper",
-          "access_rules": [ "toh_bigkey" ],
+          "access_rules": [ "toh_bigkey", "hookshot,[toh_bigkey]" ],
           "item_count": 1
         },
         {
           "name": "Big Chest",
-          "access_rules": [ "toh_bigkey" ],
+          "access_rules": [ "toh_bigkey", "hookshot,[toh_bigkey]" ],
           "item_count": 1,
-			"chest_unopened_img": "images/big_chest.png",
-			"chest_opened_img": "images/big_chest_open.png"
+          "chest_unopened_img": "images/big_chest.png",
+          "chest_opened_img": "images/big_chest_open.png"
         },
         {
           "name": "Moldorm",
@@ -557,7 +580,12 @@
     {
       "name": "Turtle Rock",
       "color": "#af0000",
-      "access_rules": [ "mirror,hammer,lift2,tr_medallion,somaria,sword,pearl", "hookshot,hammer,lift2,tr_medallion,somaria,sword,pearl", "mirror,hammer,lift2,bombos,ether,quake,somaria,sword,pearl", "hookshot,hammer,lift2,bombos,ether,quake,somaria,sword,pearl" ],
+      "access_rules": [
+        "pearl,mirror,hammer,lift2,tr_medallion,somaria,$canUseMedallions",
+        "pearl,hookshot,hammer,lift2,tr_medallion,somaria,$canUseMedallions",
+        "pearl,mirror,hammer,lift2,bombos,ether,quake,somaria,$canUseMedallions",
+        "pearl,hookshot,hammer,lift2,bombos,ether,quake,somaria,$canUseMedallions"
+      ],
       "sections": [
 		{
 			"name": "Left Side",
@@ -593,12 +621,17 @@
 		},
 		{
 			"name": "Eye Bridge",
-			"access_rules": [ "tr_smallkey:2,tr_bigkey,[lamp],[shield3]", "tr_smallkey:2,tr_bigkey,[lamp],[byrna]", "tr_smallkey:2,tr_bigkey,[lamp],[cape]" ],
+			"access_rules": [
+        "tr_smallkey:2,tr_bigkey,[lamp],item_placement_advanced",
+        "tr_smallkey:2,tr_bigkey,[lamp],[shield3]", 
+        "tr_smallkey:2,tr_bigkey,[lamp],[byrna]", 
+        "tr_smallkey:2,tr_bigkey,[lamp],[cape]"
+      ],
 			"item_count": 4
 		},
         {
 			"name": "Trinexx",
-			"access_rules": [ "firerod,icerod,tr_bigkey,tr_smallkey:3,[lamp]" ],
+			"access_rules": [ "firerod,icerod,tr_bigkey,tr_smallkey:3,[tr_smallkey:4],[lamp]" ],
 			"hosted_item": "turtlerock",
 			"item_count": 1
         }
@@ -609,49 +642,52 @@
           "x": 1890,
           "y": 144
         }
-      ],
-      "children": [
-        {
-          "name": "Mimic Cave",
-          "color": "#934f17",
-          "access_rules": [ "mirror,hammer" ],
-          "sections": [
-            {
-              "name": "Cave",
-              "item_count": 1
-            }
-          ],
-          "map_locations": [
-            {
-              "map": "lightworld",
-              "x": 1694,
-              "y": 190
-            },
-            {
-              "map": "darkworld",
-              "x": 1693,
-              "y": 205
-            }
-          ]
-        }
       ]
     },
+    {
+        "name": "Mimic Cave",
+        "color": "#934f17",
+        "access_rules": [
+            "pearl,mirror,hammer,lift2,tr_medallion,somaria,$canUseMedallions,tr_smallkey:2",
+            "pearl,hookshot,hammer,lift2,tr_medallion,somaria,$canUseMedallions,mirror,tr_smallkey:2",
+            "pearl,mirror,hammer,lift2,bombos,ether,quake,somaria,$canUseMedallions,tr_smallkey:2",
+            "pearl,hookshot,hammer,lift2,bombos,ether,quake,somaria,$canUseMedallions,mirror,tr_smallkey:2"
+        ],
+        "sections": [
+            {
+                "name": "Cave",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "lightworld",
+                "x": 1694,
+                "y": 190
+            },
+            {
+                "map": "darkworld",
+                "x": 1693,
+                "y": 205
+            }
+        ]
+    },  
     //  Ganon's Tower
     {
       "name": "Ganon's Tower",
       "color": "#af0000",
-      "access_rules": [ "mirror,hammer,lift2,crystal:7", "hookshot,hammer,lift2,crystal:7" ],
+      "access_rules": [ "pearl,mirror,hammer,lift2,$gtCrystalCount", "pearl,hookshot,lift2,$gtCrystalCount" ],
       "sections": [
         {
           "name": "Dungeon",
           "clear_as_group": false,
-          "access_rules": [ "[firerod],[hookshot],[boots],[somaria],[gt_smallkey:2],[gt_bigkey]" ],
+          "access_rules": [ "[hammer],[firerod],[hookshot],[boots],[somaria],[gt_smallkey:2],[gt_bigkey]" ],
           "item_count": 23
         },
         {
           "name": "Tower",
           "clear_as_group": false,
-          "access_rules": [ "bow,firesource,[hookshot],gt_bigkey,gt_smallkey:1" ],
+          "access_rules": [ "[bow],firesource,[hookshot],gt_bigkey,gt_smallkey:1" ],
           "item_count": 4
         }
       ],
