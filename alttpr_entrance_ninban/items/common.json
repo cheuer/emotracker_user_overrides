@@ -646,7 +646,7 @@
       },
       {
         "img": "images/mode_crystals_gn.png",
-        "img_mods": "overlay|images/mode_crystals_overlayunknown.png",
+        "img_mods": "overlay|images/mode_crystals_overlayunknown.png"
       }
     ]
   },
@@ -732,19 +732,44 @@
     ]
   },
   {
-    "name": "Difficulty",
+    "name": "Item Pool",
     "type": "progressive",
     "allow_disabled": false,
+    "loop": true,
     "stages": [
       {
-        "img": "images/mode_normal.png",
-        "codes": "mode_difficulty"
+        "img": "images/mode_difficulty_normal.png",
+        "codes": "mode_item_pool"
       },
       {
-        "img": "images/mode_hard.png"
+        "img": "images/mode_difficulty_hard.png"
       },
       {
-        "img": "images/mode_expert.png"
+        "img": "images/mode_difficulty_expert.png"
+      },
+      {
+        "img": "images/mode_difficulty_unknown.png"
+      }
+    ]
+  },
+  {
+    "name": "Item Functionality",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/mode_difficulty_normal.png",
+        "codes": "mode_item_function"
+      },
+      {
+        "img": "images/mode_difficulty_hard.png"
+      },
+      {
+        "img": "images/mode_difficulty_expert.png"
+      },
+      {
+        "img": "images/mode_difficulty_unknown.png"
       }
     ]
   },
