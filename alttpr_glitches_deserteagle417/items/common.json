@@ -728,7 +728,7 @@
     "name": "Logic",
     "type": "progressive",
     "allow_disabled": false,
-    "initial_stage_idx": 1,
+    "loop": true,
     "stages": [
       {
         "img": "images/mode_nmg.png",
@@ -749,6 +749,7 @@
     "name": "Goal",
     "type": "progressive",
     "allow_disabled": false,
+    "loop": true,
     "stages": [
       {
         "img": "images/mode_ganon.png",
@@ -765,6 +766,9 @@
       },
       {
         "img": "images/mode_pedestal.png"
+      },
+      {
+        "img": "images/mode_goal_unknown.png"
       }
     ]
   },
@@ -772,6 +776,7 @@
     "name": "State",
     "type": "progressive",
     "allow_disabled": false,
+    "loop": true,
     "stages": [
       {
         "img": "images/mode_open.png",
@@ -792,6 +797,7 @@
     "name": "Swords",
     "type": "progressive",
     "allow_disabled": false,
+    "loop": true,
     "stages": [
       {
         "img": "images/mode_randomized_swords.png",
@@ -851,6 +857,7 @@
     "name": "Dungeon Items",
     "type": "progressive",
     "allow_disabled": false,
+    "loop": true,
     "stages": [
       {
         "img": "images/mode_keys_standard.png",
@@ -864,12 +871,16 @@
       },
       {
         "img": "images/mode_keys_full.png"
+      },
+      {
+        "img": "images/mode_keys_unknown.png"
       }
     ]
   },
   {
     "name": "Variation",
     "type": "progressive",
+    "loop": true,
     "stages": [
       {
         "img": "images/mode_enemizer.png",
