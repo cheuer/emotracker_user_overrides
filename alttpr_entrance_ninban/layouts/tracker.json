@@ -17,7 +17,7 @@
 					  "item_margin": "0,0,2,10",
 					  "item_size": 40,
 					  "rows": [
-						[ "bowandarrows", "boomerangs", "hookshot", "bombs", "mushroompowder", "owsword" ],
+						[ "np_bowandarrows", "boomerangs", "hookshot", "bombs", "mushroompowder", "owsword" ],
 						[ "firerod", "icerod", "bombos", "ether", "quake", "shield" ],
 						[ "lamp", "hammer", "fluteshovel", "net", "book", "armor" ],
 						[ "bottle", "somaria", "byrna", "cape", "mirror", "gomode" ],
