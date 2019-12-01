@@ -6,6 +6,7 @@
           {
             "type": "array",
             "orientation": "vertical",
+            "h_alignment": "center",
             "content": [
               {
                 "type": "array",
