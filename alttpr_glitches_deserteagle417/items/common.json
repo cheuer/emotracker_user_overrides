@@ -729,16 +729,19 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/mode_nmg.png",
         "codes": "mode_logic"
       },
       {
-        "img": "images/mode_owg.png"
+        "img": "images/mode_owg.png",
+        "codes": "owg"
       },
       {
-        "img": "images/mode_mg.png"
+        "img": "images/mode_mg.png",
+        "codes": "mg"
       },
       {
         "img": "images/mode_nl.png"
