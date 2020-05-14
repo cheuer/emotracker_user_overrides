@@ -138,6 +138,18 @@ function updateToggleItemFromByte(segment, code, address)
     end
 end
 
+function updateMirrorFromByte(segment, code, address)
+    local item = Tracker:FindObjectForCode(code)
+    if item then
+        local value = ReadU8(segment, address)
+        if value > 1 then
+            item.Active = true
+        else
+            item.Active = false
+        end
+    end
+end
+
 function updateToggleItemFromByteAndFlag(segment, code, address, flag)
     local item = Tracker:FindObjectForCode(code)
     if item then
@@ -458,7 +470,7 @@ function updateItemsFromMemorySegment(segment)
         updateToggleItemFromByte(segment, "somaria",   0x7ef350)
         updateToggleItemFromByte(segment, "byrna",     0x7ef351)
         updateToggleItemFromByte(segment, "cape",      0x7ef352)
-        updateToggleItemFromByte(segment, "mirror",    0x7ef353)
+        updateMirrorFromByte(segment,     "mirror",    0x7ef353)
         updateToggleItemFromByte(segment, "boots",     0x7ef355)
         updateToggleItemFromByte(segment, "flippers",  0x7ef356)
         updateToggleItemFromByte(segment, "pearl",     0x7ef357)
