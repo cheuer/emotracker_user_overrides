@@ -647,6 +647,14 @@
       {
         "img": "images/mode_crystals_gn.png",
         "img_mods": "overlay|images/mode_crystals_overlayunknown.png"
+      },
+      {
+        "img": "images/mode_crystals_gn.png",
+        "img_mods": "overlay|images/mode_crystals_overlayA.png"
+      },
+      {
+        "img": "images/mode_crystals_gn.png",
+        "img_mods": "overlay|images/mode_crystals_overlayX.png"
       }
     ]
   },
