@@ -1,0 +1,46 @@
+{
+    //the intended use for this file is to override some of the "shared" layout elements where necessary, this file should be left blank in the default folder
+    "shared_lw_keys_grid": {
+        "type": "itemgrid",
+        "item_size": 32,
+        // "v_alignment": "center",
+        // "margin": "0,-4,0,6",
+        "rows": [
+            [ "easternpalace", "desertpalace", "towerofhera", "hc_label", "at_label" ],
+            [ "ep_item", "dp_item", "toh_item", "hc_item", "at_item" ],
+            [ "ep_bigkey", "dp_bigkey", "toh_bigkey", "hc_bigkey", "at_bigkey" ],
+            [ "ep_smallkey", "dp_smallkey", "toh_smallkey", "hc_smallkey", "at_smallkey" ],
+            [ "ep_map", "dp_map", "toh_map", "hc_map", "at_map" ],
+            [ "ep_compass", "dp_compass", "toh_compass", "hc_compass", "at_compass" ]
+        ]
+    },
+    "shared_dw_keys_grid": {
+        "type": "array",
+        "orientation": "horizontal",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        // "margin": "0,-4,0,4",
+        "content": [
+            {
+                "type": "itemgrid",
+                "item_size": 32,
+                "rows": [
+                    [ "palaceofdarkness", "swamppalace", "skullwoods", "thievestown", "icepalace", "miserymire", "turtlerock", "gt_label" ],
+                    [ "pod_item", "sp_item", "sw_item", "tt_item", "ip_item", "mm_item", "tr_item", "gt_item" ],
+                    [ "pod_bigkey", "sp_bigkey", "sw_bigkey", "tt_bigkey", "ip_bigkey", "mm_bigkey", "tr_bigkey", "gt_bigkey" ],
+                    [ "pod_smallkey", "sp_smallkey", "sw_smallkey", "tt_smallkey", "ip_smallkey", "mm_smallkey", "tr_smallkey", "gt_smallkey" ],
+                    [ "pod_map", "sp_map", "sw_map", "tt_map", "ip_map", "mm_map", "tr_map", "gt_map" ],
+                    [ "pod_compass", "sp_compass", "sw_compass", "tt_compass", "ip_compass", "mm_compass", "tr_compass", "gt_compass" ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "item_size": 32,
+                "rows": [ 
+                    [ "door_dungeonselect" ],
+                    [ "door_totalchest" ]
+                ]
+            }
+        ]
+    }
+}
