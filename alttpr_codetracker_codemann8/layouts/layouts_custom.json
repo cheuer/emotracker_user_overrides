@@ -38,7 +38,8 @@
                 "item_size": 32,
                 "rows": [ 
                     [ "door_dungeonselect" ],
-                    [ "door_totalchest" ]
+                    [ "door_totalchest" ],
+                    [ "door_totalkey" ]
                 ]
             }
         ]
