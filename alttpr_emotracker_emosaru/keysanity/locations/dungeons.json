@@ -689,6 +689,10 @@
           "clear_as_group": false,
           "access_rules": [ "[bow],firesource,[hookshot],gt_bigkey,gt_smallkey:1" ],
           "item_count": 4
+        },
+        {
+          "name": "Agahnim",
+          "hosted_item": "aga2"
         }
       ],
       "map_locations": [
