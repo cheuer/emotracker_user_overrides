@@ -298,7 +298,8 @@
     "name": "Flute",
     "type": "toggle",
     "img": "images/0047.png",
-    "codes": "flute,ocarina"
+    "codes": "flute,ocarina,activated_flute,activated_ocarina",
+    "secondary_codes": "activated"
   },
   // Shovel
   {
