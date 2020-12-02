@@ -367,9 +367,9 @@ function updateNPCItemFlagsFromMemorySegment(segment)
     updateSectionChestCountFromByteAndFlag(segment, "@Dwarven Smiths/Bring Him Home", 0x7ef411, 0x04)
     -- 0x08 is no longer relevant
     updateSectionChestCountFromByteAndFlag(segment, "@Lost Woods/Mushroom Spot", 0x7ef411, 0x10)
-    updateSectionChestCountFromByteAndFlag(segment, "@Witch's Hut/Assistant", 0x7ef411, 0x20, updateMushroomStatus)
+    updateSectionChestCountFromByteAndFlag(segment, "@Witch's Hut/Assistant", 0x7ef411, 0x20)
     -- 0x40 is unused
-    updateSectionChestCountFromByteAndFlag(segment, "@Magic Bat/Magic Bowl", 0x7ef411, 0x80, updateBatIndicatorStatus)    
+    updateSectionChestCountFromByteAndFlag(segment, "@Magic Bat/Magic Bowl", 0x7ef411, 0x80)    
 
 end
 
@@ -388,7 +388,7 @@ function updateOverworldEventsFromMemorySegment(segment)
     updateSectionChestCountFromOverworldIndexAndFlag(segment, "@Spectacle Rock/Up On Top",              3)    
     updateSectionChestCountFromOverworldIndexAndFlag(segment, "@Floating Island/Island",                5)    
     updateSectionChestCountFromOverworldIndexAndFlag(segment, "@Race Game/Take This Trash",             40)    
-    updateSectionChestCountFromOverworldIndexAndFlag(segment, "@Grove Digging Spot/Hidden Treasure",    42, updateShovelIndicatorStatus)
+    updateSectionChestCountFromOverworldIndexAndFlag(segment, "@Grove Digging Spot/Hidden Treasure",    42)
     updateSectionChestCountFromOverworldIndexAndFlag(segment, "@Desert Ledge/Ledge",                    48)    
     updateSectionChestCountFromOverworldIndexAndFlag(segment, "@Lake Hylia Island/Island",              53)    
     updateSectionChestCountFromOverworldIndexAndFlag(segment, "@Dam/Outside",                           59)    
@@ -462,7 +462,8 @@ function updateRoomsFromMemorySegment(segment)
     updateSectionChestCountFromRoomSlotList(segment, "@Bonk Rocks/Cave", { { 292, 4 } })
     updateSectionChestCountFromRoomSlotList(segment, "@Checkerboard Cave/Cave", { { 294, 9 } })
     updateSectionChestCountFromRoomSlotList(segment, "@Hammer Pegs/Cave", { { 295, 10 } })
-
+    
+    updateToggleItemFromByteAndFlag(segment, "aga2", 0x7ef01b, 0x08)
 end
 
 function updateItemsFromMemorySegment(segment)
