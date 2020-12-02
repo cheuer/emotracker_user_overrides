@@ -331,9 +331,9 @@ function updateNPCItemFlagsFromMemorySegment(segment)
     updateSectionChestCountFromByteAndFlag(segment, "@Dwarven Smiths/Bring Him Home", 0x7ef411, 0x04)
     -- 0x08 is no longer relevant
     updateSectionChestCountFromByteAndFlag(segment, "@Lost Woods/Mushroom Spot", 0x7ef411, 0x10)
-    updateSectionChestCountFromByteAndFlag(segment, "@Witch's Hut/Assistant", 0x7ef411, 0x20, updateMushroomStatus)
+    updateSectionChestCountFromByteAndFlag(segment, "@Witch's Hut/Assistant", 0x7ef411, 0x20)
     -- 0x40 is unused
-    updateSectionChestCountFromByteAndFlag(segment, "@Magic Bat/Magic Bowl", 0x7ef411, 0x80, updateBatIndicatorStatus)    
+    updateSectionChestCountFromByteAndFlag(segment, "@Magic Bat/Magic Bowl", 0x7ef411, 0x80)    
 
 end
 
@@ -426,7 +426,8 @@ function updateRoomsFromMemorySegment(segment)
     updateSectionChestCountFromRoomSlotList(segment, "@Bonk Rocks/Cave", { { 292, 4 } })
     updateSectionChestCountFromRoomSlotList(segment, "@Checkerboard Cave/Cave", { { 294, 9 } })
     updateSectionChestCountFromRoomSlotList(segment, "@Hammer Pegs/Cave", { { 295, 10 } })
-
+    
+    updateToggleItemFromByteAndFlag(segment, "aga2", 0x7ef01b, 0x08)
 end
 
 function updateItemsFromMemorySegment(segment)
@@ -509,6 +510,35 @@ function updateItemsFromMemorySegment(segment)
     updateSectionChestCountFromByteAndFlag(segment, "@Bottle Vendor/This Jerk", 0x7ef3c9, 0x02)
     updateSectionChestCountFromByteAndFlag(segment, "@Purple Chest/Show To Gary", 0x7ef3c9, 0x10)
 
+end
+
+function updateChestKeysFromMemorySegment(segment)
+
+    if not isInGame() then
+        return false
+    end
+
+    InvalidateReadCaches()
+
+    if AUTOTRACKER_ENABLE_ITEM_TRACKING then
+
+        -- Pending small key from chests tracking update
+        -- Sewers is unused by the game - this is here for reference sake
+        -- updateConsumableItemFromByte(segment, "sewers_smallkey",  0x7ef4e0)
+        updateConsumableItemFromTwoByteSum(segment, "hc_smallkey", 0x7ef4e0, 0x7ef4e1)
+        updateConsumableItemFromByte(segment, "dp_smallkey",  0x7ef4e3)
+        updateConsumableItemFromByte(segment, "at_smallkey",  0x7ef4e4)
+        updateConsumableItemFromByte(segment, "sp_smallkey",  0x7ef4e5)
+        updateConsumableItemFromByte(segment, "pod_smallkey", 0x7ef4e6)
+        updateConsumableItemFromByte(segment, "mm_smallkey",  0x7ef4e7)
+        updateConsumableItemFromByte(segment, "sw_smallkey",  0x7ef4e8)
+        updateConsumableItemFromByte(segment, "ip_smallkey",  0x7ef4e9)
+        updateConsumableItemFromByte(segment, "toh_smallkey", 0x7ef4ea)
+        updateConsumableItemFromByte(segment, "tt_smallkey",  0x7ef4eb)
+        updateConsumableItemFromByte(segment, "tr_smallkey",  0x7ef4ec)
+        updateConsumableItemFromByte(segment, "gt_smallkey",  0x7ef4ed)
+       
+    end
 end
 
 function updateHeartPiecesFromMemorySegment(segment)
@@ -610,3 +640,4 @@ ScriptHost:AddMemoryWatch("LTTP Overworld Event Data", 0x7ef280, 0x82, updateOve
 ScriptHost:AddMemoryWatch("LTTP NPC Item Data", 0x7ef410, 2, updateNPCItemFlagsFromMemorySegment)
 ScriptHost:AddMemoryWatch("LTTP Heart Piece Data", 0x7ef448, 1, updateHeartPiecesFromMemorySegment)
 ScriptHost:AddMemoryWatch("LTTP Heart Container Data", 0x7ef36c, 1, updateHeartContainersFromMemorySegment)
+ScriptHost:AddMemoryWatch("LTTP Chest Key Data", 0x7ef4e0, 32, updateChestKeysFromMemorySegment)
