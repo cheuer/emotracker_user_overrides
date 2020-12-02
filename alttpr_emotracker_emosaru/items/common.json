@@ -69,6 +69,7 @@
   {
     "name": "Bombs",
     "type": "progressive_toggle",
+    "initial_stage_idx": 0,
     "stages": [
       {
         "img": "images/0003.png",
@@ -101,6 +102,7 @@
       }
     ]
   },
+
   // Blue Boomerang
   {
     "name": "Blue Boomerang",
@@ -108,6 +110,7 @@
     "img": "images/boomerang_blue.png",
     "codes": "blue_boomerang,bluemarang,best_boomerang"
   },
+
   // Red Boomerang
   {
     "name": "Red Boomerang",
@@ -115,6 +118,7 @@
     "img": "images/boomerang_red.png",
     "codes": "red_boomerang,redmarang,worst_boomerang"
   },
+
   // Boomerang Combo
   {
     "name": "Boomerangs",
@@ -146,6 +150,7 @@
       }
     ]
   },
+
   // Hookshot
   {
     "name": "Hookshot",
@@ -212,6 +217,7 @@
     "img": "images/0006.png",
     "codes": "icerod"
   },
+
   // Bombos
   {
     "name": "Bombos",
@@ -374,6 +380,7 @@
     "img": "images/0022.png",
     "codes": "pearl,moonpearl"
   },
+
   // Bottles
   {
     "name": "Bottles",
@@ -399,6 +406,7 @@
       }
     ]
   },
+
   // Somaria
   {
     "name": "Cane of Somaria",
@@ -435,6 +443,7 @@
     "img": "images/0062.png",
     "codes": "gomode"
   },
+
   // Aganhim
   {
     "name": "Aganhim",
@@ -564,24 +573,23 @@
       }
     ]
   },
-  // Placement Modes
+  // Heart Pieces
   {
-    "name": "Item Placement Mode",
-    "type": "progressive",
-    "allow_disabled": false,
-    "initial_stage_idx": 1,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/item_placement_basic.png",
-        "codes": "item_placement_mode,item_placement_basic"
-      },
-      {
-        "img": "images/item_placement_advanced.png",
-        "codes": "item_placement_mode,item_placement_advanced"
-      }
-    ]
+      "name": "Heart Piece",
+      "type": "consumable",
+      "img": "images/0067.png",
+      "codes": "heartpiece",
+      "max_quantity": 24
   },
+  // Heart Containers
+  {
+      "name": "Heart Container",
+      "type": "consumable",
+      "img": "images/0060.png",
+      "codes": "heartcontainer",
+      "max_quantity": 11
+  },
+  // GT Required Crystals
   {
     "name": "GT Required Crystals",
     "capturable": false,
@@ -629,6 +637,7 @@
       }
     ]
   },
+  // Ganon Required Crystals
   {
     "name": "Ganon Required Crystals",
     "capturable": false,
@@ -681,6 +690,24 @@
       {
         "img": "images/mode_crystals_gn.png",
         "img_mods": "overlay|images/mode_crystals_overlayX.png"
+      }
+    ]
+  },
+  // Placement Modes
+  {
+    "name": "Item Placement Mode",
+    "type": "progressive",
+    "allow_disabled": false,
+    "initial_stage_idx": 1,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/item_placement_basic.png",
+        "codes": "item_placement_mode,item_placement_basic"
+      },
+      {
+        "img": "images/item_placement_advanced.png",
+        "codes": "item_placement_mode,item_placement_advanced"
       }
     ]
   },
