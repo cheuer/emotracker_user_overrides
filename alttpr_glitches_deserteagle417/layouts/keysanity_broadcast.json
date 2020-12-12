@@ -2,8 +2,10 @@
     "tracker_broadcast": {
 		"type": "array",
 		"margin": "0",
-		"width": 504,
-		"height": 1000,
+		"width": 360,
+		"height": 296,
+		// "width": 504,
+		// "height": 1000,
 		"content": [
 			{
 				"type": "array",
@@ -12,38 +14,38 @@
 					{
 					  "type": "array",
 					  "orientation": "vertical",
-					  "width": 370,
+					//   "width": 360,
 					  "margin": "0,0,0,0",
 					  "content": [
 						{
 						  "type": "layout",
 						  "key": "shared_item_grid"
 						},
-						{
-							"type": "container",
-							"margin": "0,10,0,0",
-							"width": 300,
-							"height": 560,
-							"content": {
-								"type": "map"
-							}
-						}
+						// {
+						// 	"type": "container",
+						// 	"margin": "0,10,0,0",
+						// 	"width": 300,
+						// 	"height": 560,
+						// 	"content": {
+						// 		"type": "map"
+						// 	}
+						// }
 					  ]
 					},
-					{
-						"type": "container",
-						"margin": "0,0,0,0",
-						"width": 144,
-						"height": 1080,
-						"content": {
-							"type": "recentpins",
-							"h_alignment": "stretch",
-							"v_alignment": "stretch",
-							"orientation": "vertical",
-							"compact": true,
-							"num_items": 10
-						}
-					}
+					// {
+					// 	"type": "container",
+					// 	"margin": "0,0,0,0",
+					// 	"width": 144,
+					// 	"height": 1080,
+					// 	"content": {
+					// 		"type": "recentpins",
+					// 		"h_alignment": "stretch",
+					// 		"v_alignment": "stretch",
+					// 		"orientation": "vertical",
+					// 		"compact": true,
+					// 		"num_items": 10
+					// 	}
+					// }
 				]
 			}
 		]
