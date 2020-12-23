@@ -134,11 +134,14 @@
                           ]
                       },
                       {
-                          "type": "item",
-                          "item": "mode_keys",
-                          "width": 32,
-                          "height": 32,
-                          "margin": "2,0"
+                          "type": "itemgrid",
+                          "item_size": 16,
+                          "item_margin": "0",
+                          "margin": "2,0",
+                          "rows": [
+                            [ "mode_keys_map", "mode_keys_compass" ],
+                            [ "mode_keys_smallkey", "mode_keys_bigkey" ]
+                          ]
                       },
                       {
                           "type": "item",

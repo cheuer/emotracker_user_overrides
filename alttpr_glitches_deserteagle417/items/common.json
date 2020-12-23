@@ -353,7 +353,7 @@
     "img": "images/0011.png",
     "codes": "hammer"
   },
-  
+
   // Bug Catching Net
   {
     "name": "Bug Catching Net",
@@ -887,6 +887,34 @@
         "img": "images/mode_keys_unknown.png"
       }
     ]
+  },
+  {
+    "name": "Map Shuffle",
+    "type": "toggle",
+    "img": "images/mode_keys_map.png",
+    "codes": "mode_keys_map"
+
+  },
+  {
+    "name": "Compass Shuffle",
+    "type": "toggle",
+    "img": "images/mode_keys_compass.png",
+    "codes": "mode_keys_compass"
+
+  },
+  {
+    "name": "Small Key Shuffle",
+    "type": "toggle",
+    "img": "images/mode_keys_smallkey.png",
+    "codes": "mode_keys_smallkey"
+
+  },
+  {
+    "name": "Big Key Shuffle",
+    "type": "toggle",
+    "img": "images/mode_keys_bigkey.png",
+    "codes": "mode_keys_bigkey"
+
   },
   {
     "name": "Variation",

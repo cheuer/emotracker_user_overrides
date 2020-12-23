@@ -813,6 +813,34 @@
     ]
   },
   {
+    "name": "Map Shuffle",
+    "type": "toggle",
+    "img": "images/mode_keys_map.png",
+    "codes": "mode_keys_map"
+
+  },
+  {
+    "name": "Compass Shuffle",
+    "type": "toggle",
+    "img": "images/mode_keys_compass.png",
+    "codes": "mode_keys_compass"
+
+  },
+  {
+    "name": "Small Key Shuffle",
+    "type": "toggle",
+    "img": "images/mode_keys_smallkey.png",
+    "codes": "mode_keys_smallkey"
+
+  },
+  {
+    "name": "Big Key Shuffle",
+    "type": "toggle",
+    "img": "images/mode_keys_bigkey.png",
+    "codes": "mode_keys_bigkey"
+
+  },
+  {
     "name": "Variation",
     "type": "progressive",
     "loop": true,
