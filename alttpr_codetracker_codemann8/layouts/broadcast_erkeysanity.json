@@ -1,149 +1,219 @@
 {
-    "item_grid": {
-        "type": "container",
-        "content": [
-            {
-                "type": "itemgrid",
-                "h_alignment": "center",
-                "item_margin": "0,0,2,10",
-                "rows": [
-                    [
-                        "bow",
-                        "boomerangs",
-                        "hookshot",
-                        "bomb",
-                        "",
-                        "boots",
-                        "owsword"
-                    ],
-                    [
-                        "firerod",
-                        "icerod",
-                        "bombos",
-                        "ether",
-                        "quake",
-                        "lift1",
-                        "shield"
-                    ],
-                    [
-                        "lamp",
-                        "hammer",
-                        "",
-                        "net",
-                        "book",
-                        "flippers",
-                        "armor"
-                    ],
-                    [
-                        "bottle",
-                        "somaria",
-                        "byrna",
-                        "cape",
-                        "mirror",
-                        "pearl",
-                        "gomode"
-                    ]
-                ]
-            },
-            {
-                "type": "item",
-                "item": "flute",
-                "width": 24,
-                "margin": "-88,90,0,0"
-            },
-            {
-                "type": "item",
-                "item": "shovel",
-                "width": 24,
-                "margin": "-56,98,0,0"
-            },
-            {
-                "type": "item",
-                "item": "powder",
-                "width": 24,
-                "margin": "50,4,0,0"
-            },
-            {
-                "type": "item",
-                "item": "mushroom",
-                "width": 24,
-                "margin": "88,18,0,0"
-            }
-        ]
-    },
     "tracker_broadcast": {
         "type": "array",
-        "dropshadow": true,
-        // "margin": "10",
+        "orientation": "horizontal",
         "content": [
             {
                 "type": "array",
                 "orientation": "vertical",
+                "h_alignment": "left",
+                "margin": "-2,0,0,0",
+                "content": [
+                    {
+                        "type": "map",
+                        "maps": [
+                            "lightworld",
+                            "darkworld"
+                        ],
+                        "width": 250,
+                        "height": 490
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "margin": "0,0,0,0",
                 "content": [
                     {
                         "type": "array",
-                        "orientation": "vertical",
-                        "margin": "0,5,0,0",
+                        "orientation": "horizontal",
+                        "margin": "-10,-5,0,0",
                         "content": [
                             {
-                                "type": "array",
-                                "orientation": "horizontal",
-                                "margin": "0,-5,0,0",
-                                "content": [
-                                    {
-                                        "type": "layout",
-                                        "key": "item_grid"
-                                    },
-                                    {
-                                        "type": "container",
-                                        "content": {
-                                            "type": "layout",
-                                            "key": "light_keys_grid"
-                                        }
-                                    }
+                                "type": "itemgrid",
+                                "h_alignment": "center",
+                                "item_margin": "1",
+                                "item_size": 24,
+                                "rows": [
+                                    [
+                                        "bow",
+                                        "boomerangs",
+                                        "hookshot",
+                                        "bomb",
+                                        ""
+                                    ],
+                                    [
+                                        "firerod",
+                                        "icerod",
+                                        "bombos",
+                                        "ether",
+                                        "quake"
+                                    ],
+                                    [
+                                        "lamp",
+                                        "hammer",
+                                        "",
+                                        "net",
+                                        "book"
+                                    ],
+                                    [
+                                        "bottle",
+                                        "somaria",
+                                        "byrna",
+                                        "cape",
+                                        "mirror"
+                                    ],
+                                    [
+                                        "boots",
+                                        "lift1",
+                                        "flippers",
+                                        "pearl",
+                                        "halfmagic"
+                                    ],
+                                    [
+                                        "owsword",
+                                        "shield",
+                                        "armor",
+                                        "gomode"
+                                    ]
                                 ]
                             },
-                            {
-                                "type": "array",
-                                "orientation": "horizontal",
-                                "margin": "0,-2,0,0",
-                                "content": [
-                                    {
-                                        "type": "container",
-                                        "content": {
-                                            "type": "layout",
-                                            "key": "dark_keys_grid"
-                                        }
-                                    },
-                                    {
-                                        "type": "itemgrid",
-                                        "h_alignment": "center",
-                                        "margin": "3,-1,4,0",
-                                        "item_margin": "3,1",
-                                        "item_size": 31,
-                                        "badge_font_size": 18,
-                                        "rows": [
-                                            [ "agas" ],
-                                            [ "gt_crystals_surrogate" ],
-                                            [ "goal_setting" ],
-                                            [ "gt_bkgame" ]
-                                        ]
-                                    }
-                                ]
-                            }
+                        {
+                            "type": "item",
+                            "item": "flute",
+                            "width": 16,
+                            "margin": "-150,60,0,0"
+                        },
+                        {
+                            "type": "item",
+                            "item": "shovel",
+                            "width": 16,
+                            "margin": "-130,65,0,0"
+                        },
+                        {
+                            "type": "item",
+                            "item": "powder",
+                            "width": 16,
+                            "margin": "-50,6,0,0"
+                        },
+                        {
+                            "type": "item",
+                            "item": "mushroom",
+                            "width": 16,
+                            "margin": "-20,16,0,0"
+                        }
                         ]
                     },
                     {
                         "type": "array",
-                        "orientation": "vertical",
-                        "h_alignment": "left",
-                        "margin": "-2,0,0,0",
+                        "orientation": "horizontal",
+                        "margin": "0,0,0,0",
                         "content": [
                             {
-                                "type": "map",
-                                "maps": [ "lightworld", "darkworld" ],
-                                "width": 375,
-                                "height": 200
+                                "type": "itemgrid",
+                                "margin": "0",
+                                "item_margin": "1,1",
+                                "item_size": 20,
+                                "badge_font_size": 16,
+                                "rows": [
+                                    [
+                                        "hc_label",
+                                        "hc_item",
+                                        "hc_smallkey",
+                                        "hc_bigkey"
+                                    ],
+                                    [
+                                        "easternpalace",
+                                        "ep_item",
+                                        "ep_smallkey",
+                                        "ep_bigkey"
+                                    ],
+                                    [
+                                        "desertpalace",
+                                        "dp_item",
+                                        "dp_smallkey",
+                                        "dp_bigkey"
+                                    ],
+                                    [
+                                        "towerofhera",
+                                        "toh_item",
+                                        "toh_smallkey",
+                                        "toh_bigkey"
+                                    ],
+                                    [
+                                        "at_label",
+                                        "at_item",
+                                        "at_smallkey",
+                                        "at_bigkey"
+                                    ],
+                                    [
+                                        "palaceofdarkness",
+                                        "pod_item",
+                                        "pod_smallkey",
+                                        "pod_bigkey"
+                                    ],
+                                    [
+                                        "swamppalace",
+                                        "sp_item",
+                                        "sp_smallkey",
+                                        "sp_bigkey"
+                                    ],
+                                    [
+                                        "skullwoods",
+                                        "sw_item",
+                                        "sw_smallkey",
+                                        "sw_bigkey"
+                                    ],
+                                    [
+                                        "thievestown",
+                                        "tt_item",
+                                        "tt_smallkey",
+                                        "tt_bigkey"
+                                    ],
+                                    [
+                                        "icepalace",
+                                        "ip_item",
+                                        "ip_smallkey",
+                                        "ip_bigkey"
+                                    ],
+                                    [
+                                        "miserymire",
+                                        "mm_item",
+                                        "mm_smallkey",
+                                        "mm_bigkey"
+                                    ],
+                                    [
+                                        "turtlerock",
+                                        "tr_item",
+                                        "tr_smallkey",
+                                        "tr_bigkey"
+                                    ],
+                                    [
+                                        "gt_label",
+                                        "gt_item",
+                                        "gt_smallkey",
+                                        "gt_bigkey"
+                                    ],
+                                    // [
+                                    //     "agas",
+                                    //     "gt_crystals_surrogate",
+                                    //     "goal_setting",
+                                    //     "gt_bkgame"
+                                    // ]
+                                ]
+                            },
+                            {
+                                "type": "itemgrid",
+                                "h_alignment": "center",
+                                "item_margin": "1",
+                                "item_size": 24,
+                                "rows": [
+                                    ["agas"],
+                                    ["gt_crystals_surrogate"],
+                                    ["goal_setting"],
+                                    ["gt_bkgame"]
+                                ]
                             }
                         ]
                     }
