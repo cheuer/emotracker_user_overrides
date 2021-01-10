@@ -212,7 +212,8 @@
                                             [ "gt_crystals_surrogate" ],
                                             [ "goal_setting" ],
                                             [ "gt_bkgame" ],
-                                            [ "" ],
+                                            [ "dam" ],
+                                            [ "attic" ],
                                             [ "world_state_mode_surrogate_small" ]
                                         ]
                                     },
