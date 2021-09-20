@@ -105,10 +105,15 @@ function testFlag(segment, address, flag)
 end
 
 function updateProgressiveBow(segment)
-    local item = Tracker:FindObjectForCode("bowandarrows")    
+    local item = Tracker:FindObjectForCode("bow")
+
+    if testFlag(segment, 0x7ef38e, 0x80) and ReadU8(segment, 0x7ef340) > 0 then
+        item.Active = true
+    else
+        item.Active = false
+    end
+
     if testFlag(segment, 0x7ef38e, 0x40) then
-        item.CurrentStage = 2
-    elseif testFlag(segment, 0x7ef38e, 0x80) then
         item.CurrentStage = 1
     else
         item.CurrentStage = 0
@@ -505,8 +510,6 @@ function updateItemsFromMemorySegment(segment)
         updateToggleItemFromByteAndFlag(segment, "shovel", 0x7ef38c, 0x04)
         updateToggleItemFromByteAndFlag(segment, "powder", 0x7ef38c, 0x10)
         updateToggleItemFromByteAndFlag(segment, "mushroom", 0x7ef38c, 0x20)
-        updateToggleItemFromByteAndFlag(segment, "np_bow", 0x7ef38e, 0x80)
-        updateToggleItemFromByteAndFlag(segment, "np_silvers", 0x7ef38e, 0x40)
         updateToggleItemFromByteAndFlag(segment, "mirror", 0x7ef353, 0x02)
 
         updateProgressiveBow(segment)
